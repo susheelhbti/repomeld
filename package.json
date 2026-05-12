@@ -1,0 +1,41 @@
+{
+  "name": "repomeld",
+  "version": "3.0.4",
+  "description": "Meld your entire repo into a single file — perfect for AI context & code reviews",
+  "main": "bin/cli.js",
+  "bin": {
+    "repomeld": "bin/cli.js"
+  },
+  "scripts": {
+    "start": "node bin/cli.js",
+    "dev": "node bin/cli.js --dry-run",
+    "test": "node bin/cli.js --dry-run --no-update-check"
+   
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "archiver": "^6.0.1",
+    "commander": "^11.1.0",
+    "ignore": "^5.3.0",
+    "isbinaryfile": "^5.0.0"
+  },
+  "keywords": ["cli", "repo", "combiner", "ai-context", "code-review", "mermaid", "dependency-graph"],
+  "author": "Susheel <susheelhbti@gmail.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/susheelhbti/repomeld.git"
+  },
+  "bugs": {
+    "url": "https://github.com/susheelhbti/repomeld/issues"
+  },
+  "homepage": "https://github.com/susheelhbti/repomeld#readme"
+}
